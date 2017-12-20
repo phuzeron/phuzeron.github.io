@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<style type="text/css">
+			<!--
+			body{
+				background-color: rgba(126,126,126,0.5);
+				font-family: "ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN","ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+			}
+			p{
+				margin: 2em 0px;
+			}
+			.maintenance{
+				margin: 0 auto;
+				padding: 4px;
+				text-align: center;
+				border:1px solid #888b8b;
+				background-color: #ffffff;
+				border-radius: 10px;
+			}
+			.maintenance-head{
+				text-shadow: 2px 2px 1px #999999;
+				border:0.5px solid #fd9ab7;
+				background-color: #fd9ab7;
+				border-radius: 10px;
+				font-size: 20px;
+				color: #ffffff;
+			}
+			.maintenance-body{
+				font-size: 14px;
+				color: #764d42;
+			}
+			.maintenance-button{
+				box-shadow:2px 2px 2px #aaa;
+				border:0.5px solid #fdfbe1;
+				background-color: #fdfbe1;
+				border-radius: 10px;
+				padding: 0.25em 3em;
+				font-size: 14px;
+				color: #764d42;
+				outline: 0;
+				
+				position: relative;
+				overflow: hidden;
+				transform: translate3d(0, 0, 0);
+			}
+			.maintenance-button:after{
+				content: "";
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				pointer-events: none;
+				background-image: radial-gradient(circle, #555 10%, transparent 10.01%);
+				background-repeat: no-repeat;
+				background-position: 50%;
+				transform: scale(10, 10);
+				opacity: 0;
+				transition: transform .5s, opacity 1s;
+			}
+			.maintenance-button:active:after {
+				transform: scale(0, 0);
+				opacity: .2;
+				transition: 0s;
+			}
+			-->
+		</style>
+	</head>
+	<body>
+	<table class="maintenance">
+		<tr>
+			<td class="maintenance-head">メンテナンス中</td>
+		</tr>
+		<tr>
+			<td class="maintenance-body">
+				<p>ただいま、緊急メンテナンスを実施しております。</p>
+				<p>ご利用のお客様にはご不便をおかけいたしますが、<br>何卒ご理解とご協力をよろしくお願い申し上げます<br></p>
+				<p>復旧目処など詳細につきましては<br>公式Twitter及び公式サイトにて随時おしらせいたします</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="maintenance-action"><button class="maintenance-button" onclick="history.back()">OK</button></td>
+		</tr>
+	</table>
+	</body>
+</html>
